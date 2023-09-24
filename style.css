@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: auto;
+    z-index: 1;
+    position: sticky;
+    position: -webkit-sticky;
+    background: white;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    margin: auto;
+}
+
+.logo a {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    float: left;
+    color: black;
+}
+
+.search-bar {
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.search-bar a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.menu {
+    text-align: right;
+    position: sticky;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.menu ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+.btn {
+    background: black fixed;
+    border-radius: 20px;
+    padding: 10px 12px 10px 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid black;
+    background: white;
+    text-decoration: none;
+    color: black;
+    padding: 10px 12px 10px 12px;
+}
+
+@media screen and (max-width: 800px){
+    .header {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 0px;
+        display: block;
+        text-align: center;
+        /* align-items: center; */
+        margin-bottom: 25px;
+    }
+
+    .logo a{
+        text-align: center;
+        width: 100%;
+    }
+
+    .search-bar {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .menu {
+        margin-left: 0px;
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+}
+
+/* ads */
+
+.ads {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.ads img {
+    display: block;
+    width: 100%;
+}
+
+/* category */
+.category {
+    margin: 100px 75px 100px 75px;
+}
+
+.category-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-col {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 150px;
+}
+
+.category-col:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+    .category {
+        width: 800px;
+    }
+    
+    .category-row{
+       display: block;
+    }
+
+    .category-col {
+        height: 50px;
+        line-height: 45px;
+    }
+}
+
+/* Discount */
+
+.discount {
+    margin: auto;
+    text-align: center;
+}
+
+.discount h2 {
+    font-size: 28px;
+}
+
+.discount-row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-col {
+    border-radius: 8px;
+    margin: 10px;
+    text-align: left;
+    border: solid thin lightgray;
+}
+
+.product-col:hover {
+    cursor: pointer;
+}
+
+.product-col img {
+    width: 205px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-col h2 {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.product-col h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.product-col h4 {
+    color: red;
+    text-decoration: line-through;
+    margin-bottom: 15px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.product-col p {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px){
+    .discount-row{
+        display: block;
+    }
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.footer h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer-row ul {
+    list-style-type: none;
+}
+
+.footer-col1 ul li a {
+    color: gray;
+}
+
+.footer-col2 ul li img {
+    width: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-col3 h5 {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+}
+
+.footer-col3 ul li {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.footer-col3 ul li img {
+    width: 22px;
+}
+
+.footer-col3 ul li img:hover {
+    cursor: pointer;
+}
+
+.footer-col3 ul li a {
+    margin-bottom: 50px;
+}
+
+.footer-col4 img {
+    height: 65px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .footer-col3 ul li img {
+        height: 10px;
+    } 
+
+    .footer-col4 img {
+        height: 50px;
+    }
+}
+
+/* about */
+
+.about-content1 {
+   margin: 100px 75px 100px 75px;
+}
+
+.about-content1 h2 {
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+
+.about-content2 {
+    margin: 150px 75px 150px 75px;
+    display: flex;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-image img {
+   width: 650px;
+}
+
+.about-content2 .about-text h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-content2 .about-text {
+    margin-left: 75px;
+}
+
+.about-content3 {
+    margin: 150px 75px 150px 75px;
+    display: flex;
+}
+
+.about-content3 .about-text h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-content3 .about-text {
+    margin-right: 75px;
+}
+
+.about-card {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.small-card {
+    border: 1px solid black;
+    width: 250px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    transition: 0.3s;
+}
+
+.small-card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.small-card img {
+    width: 248px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.big-card {
+    border: 1px solid black;
+    width: 350px;
+    height: 450px;
+    transition: 0.3s;
+}
+
+.big-card:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.big-card img {
+    width: 348px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.small-card h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.big-card h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .about-content1 {
+        display: block;
+    }
+
+    .about-content2 {
+        display: block;
+    }
+
+    .about-content2 .about-text {
+        margin-left: 0;
+    }
+
+    .about-content3 {
+        display: block;
+    }
+
+    .about-content3 .about-text {
+        margin-right: 0;
+    }
+
+    .about-card {
+        display: block;
+    }
+
+    .small-card {
+        margin-left: 195px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .big-card {
+        margin-left: 145px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+/* product */
+
+.product-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-header h3 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+.sort {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.sort select {
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.products {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.products h3 {
+    margin: 10px;
+    margin-left: 10px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.products .product-col p {
+    margin-left: 5px;
+}
+
+.products .product-col h3 {
+    margin-left: 5px;
+}
+
+.desc p {
+    color: gray;
+    font-size: 12px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 800px) {
+    .products {
+        text-align: center;
+    }
+    
+    .product-row {
+        display: block;
+    }
+    
+    .product-col img {
+        justify-content: center;
+    }
+
+}
+
+/* promotion */
+
+.promotion-title {
+    font-size: 36px;
+    margin-left: 85px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.promotion {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
+}
+
+.promotion-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion-col {
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    text-align: left;
+    border: solid thin lightgray;
+}
+
+.promotion-col:hover {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.promotion-col img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.promotion-col h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.promotion-col h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    text-align: left;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.promotion-col h4 {
+    font-size: 24px;
+    color: red;
+    text-decoration: line-through;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.promotion-col p {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px){
+    .promotion-row {
+        display: block;
+    }
+}
+
+/* subscribe */
+
+.subscribe-title {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subscribe {
+    margin-left: 75px;
+    margin-right: 75px;
+    justify-content: center;
+    text-align: center;
+}
+
+.subscribe-form {
+    justify-content: center;
+}
+
+.subscribe-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.first-name {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.first-name input {
+    width: 250px;
+    height: 25px;
+}
+
+.last-name {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.last-name input {
+    width: 250px;
+    height: 25px;
+}
+
+.email {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.email input {
+    width: 250px;
+    height: 25px;
+}
+
+.password {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.password input {
+    width: 250px;
+    height: 25px;
+}
+
+.verify {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.verify input {
+    width: 250px;
+    height: 25px;
+}
+
+.phone-num {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.phone-num input {
+    width: 250px;
+    height: 25px;
+}
+
+.birth-date {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.birth-date input {
+    width: 250px;
+    height: 25px;
+}
+
+.preferences {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.preferences select {
+    width: 250px;
+    height: 25px;
+}
+
+.newsletter {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.newsletter h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.address {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.submit-reset-btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.submit-reset-btn input {
+    width: 165px;
+    height: 25px;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.submit-reset-btn input:hover {
+    cursor: pointer;
+}
+
+.summary {
+    margin-top: 100px;
+    margin-bottom: 50x;
+}
+
+.summary h4 {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.summary p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.error {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#error {
+    display: none;
+    color: red;
+}

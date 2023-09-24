@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - VOrskins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">VOrskins</a>
+            </div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text" placeholder="Search our product">
+                </form>
+                <a href="" class="btn">search</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="subscribe.html" class="btn">Subscribe</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscribe-title">
+        <h2>SUBSCRIBE</h2>
+    </div>
+
+    <section class="subscribe">
+        <div class="subscribe-form">
+            <form action="" class="form">
+                <div class="first-name">
+                    <label for="">First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="last-name">
+                    <label for="">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+                </div>
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="phone-num">
+                    <label for="">Phone Number</label>
+                    <input type="number" id="phoneNum" placeholder="Enter your phone number" required>
+                </div>
+                <div class="password">
+                    <label for="">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="verify">
+                    <label for="verify">Verify Password</label>
+                    <input type="password" id="verify" placeholder="Verify password" required>
+                </div>
+                <div class="birth-date">
+                    <label for="">Birth Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="preferences">
+                    <label for="">preferences</label>
+                    <select name="" id="preferences" required>
+                        <option></option>
+                        <option value="Skin care">Skin care</option>
+                        <option value="Body care">Body care</option>
+                        <option value="Hair care">Hair care</option>
+                    </select>
+                </div>
+                <div class="address">
+                    <label for="address">Address</label>
+                    <textarea name="" id="address" cols="45" rows="10"></textarea>
+                </div>
+                <!-- <div class="newsletter">
+                    <h3>Are you agree to receive newsletter from vorskins</h3>
+                    <label for="">Agree</label><input type="radio" id="agree" name="submitBtn">
+                    <label for="">Disagree</label><input type="radio" id="agree" name="submitBtn">
+                </div> -->
+                <div class="submit-reset-btn">
+                    <input type="submit" value="submit" id="submitBtn">
+                    <input type="reset" value="reset" id="submitBtn">
+                </div>
+            </form>
+        </div>
+
+        <div class="summary">
+            <h4 id="firstNameTxt"></h4><br><br>
+            <p id="firstNameTxt" id="lastNameTxt"></p>
+            <p id="lastNameTxt"></p>
+            <p id="emailTxt"></p>
+            <p id="dateTxt"></p>
+            <p id="preferencesTxt"></p>
+            <p id="phoneNumTxt"></p>
+            <p id="addressTxt"></p>
+        </div>
+
+        <div class="error">
+            <p id="error">Error Message</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h3>VOrskins</h3>
+        <div class="footer-row">
+            <div class="footer-col1">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="">Promotion</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Store Location</a></li>
+                    <li><a href="">Term & conditions</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="https://www.tokopedia.com/?gclid=CjwKCAjw14uVBhBEEiwAaufYx-ORX1TwXJUSENx6roow39bvbwVx4ZjEUqaKHnPs7rYfeDr6VS05exoCTUcQAvD_BwE"><img src="tokopedia.png" alt=""></a></li>
+                    <li><a href="https://shopee.co.id/?gclid=CjwKCAjw14uVBhBEEiwAaufYx2qYv8487OYpbQVVN9G16MoKbPfvk6C4PTg-G0xuryigMbdMxCotshoCdz0QAvD_BwE"><img src="shopee.png" alt=""></a></li>
+                    <li><a href="https://www.bukalapak.com/"><img src="bukalapak.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer-col3">
+                <h5>Our Social Media</h5>
+                <ul>
+                    <li><a href="https://www.google.com/search?q=instagram&oq=in&aqs=chrome.0.69i59j69i57j69i59l3j0i131i433i512j46i175i199i512j46i199i465i512j0i433i512j0i131i433i512.620j0j15&sourceid=chrome&ie=UTF-8"><img src="download.jpg" alt="">@VOrskins</a></li>
+                    <li><a href="https://twitter.com/home"><img src="twitter.png" alt="">@VOrskins</a></li>
+                    <li><a href="https://www.google.com/search?q=facebook&oq=fa&aqs=chrome.0.69i59j46i131i199i433i465i512j69i57j69i59j0i512j0i131i433i512j46i433i512j46i131i433j0i131i433i512j46i199i291i512.725j0j15&sourceid=chrome&ie=UTF-8"><img src="facebook.png" alt="">VOrskins</a></li>
+                    <li><a href="https://www.whatsapp.com/?lang=id"><img src="whatsapp.png" alt="">+62 81234567890</a></li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <div><a href=""><img src="googleplay.png" alt=""></a></div>
+                <div><a href=""><img src="appstore.png" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
